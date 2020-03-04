@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<button lang="en">
+    <head>
+        <title>Людна зникає в реальному часі 🤯</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Jason Mayes">
+        <!-- Import the webpage's stylesheet -->
+        <link rel="stylesheet" href="style.css">
+        <!-- Import TensorFlow.js library -->
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js" type="text/javascript"></script>
+    </head>  
+    <body>
+        <h1>Людна зникає в реальному часі 🤯</h1>
+        <h2>Використовується TensorFlow.js</h2>
+        <h2>Що робити?</h2>
+        <p>Зачекайте, поки модель завантажиться.</p>
+        <section id="demos" class="invisible">
+            <div id="liveView" class="webcam">
+                <button id="webcamButton">Увімкнути камеру</button>
+                <video id="webcam" autoplay></video>
+            </div>
+        </section>
+        <!-- Include the Glitch button to show what the webpage is about and to make it easier for folks to view source and remix -->
+        <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+        <script src="https://button.glitch.me/button.js"></script>
+        <!-- Load the bodypix model to recognize body parts in images -->
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/body-pix@2.0"></script>
+        <!-- Import the page's JavaScript to do some stuff -->
+        <script src="script.js" defer></script>
+    </body>
+</html>
